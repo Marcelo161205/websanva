@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>♥ Mi princesa ♥</title>
+  <style>
+    .body {
+      background: url(peonias.jpg);
+      text-align: center;
+    }
+
+    .body__title {
+      color: #000000;
+    }
+
+    .body__img {
+      width: 100%;
+      max-width: 520px;
+      border-radius: 100%;
+    }
+  </style>
+</head>
+
+<body class="body">
+  <h1 class="body__title">♥ Quieres ser mi san valentin ♥</h1>
+  <img src="https://i.pinimg.com/originals/ac/30/41/ac3041d2365185b14dda2effb2173a03.png" alt="Foto D My" class="body__img" />
+  <br>
+  <button id="yes">🌚Shi🌚</button>
+  <button id="no">😭Ño😭</button>
+
+  <script>
+    const vuttonSi = document.getElementById('yes');
+    const vuttonNo = document.getElementById('no');
+
+    const zomosNobios = () => {
+      alert('💞Ahora somos san valentinos💞');
+      location.href = 'https://www.youtube.com/watch?v=TCa_z-wKc48';
+    };
+
+    const ebitarKCRompaMyBobo = () => {
+      vuttonNo.style.position = 'absolute';
+      vuttonNo.style.top = (Math.random() * window.innerHeight + 'px');
+      vuttonNo.style.left = (Math.random() * window.innerWidth + 'px');
+    };
+
+    vuttonSi.addEventListener('click', zomosNobios);
+    vuttonNo.addEventListener('mouseover', ebitarKCRompaMyBobo);
+  </script>
+</body>
+
+</html>
